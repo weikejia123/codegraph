@@ -1,6 +1,6 @@
 {
   "schema_version": "3",
-  "scanned_at": "2026-07-19T18:25:04Z",
+  "scanned_at": "2026-07-19T18:47:31Z",
   "tech_stack": [
     {
       "name": "@clack/prompts",
