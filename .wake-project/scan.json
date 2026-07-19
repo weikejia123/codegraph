@@ -1,7 +1,7 @@
 {
   "schema_version": "3",
-  "scanned_at": "2026-07-19T19:33:42Z",
-  "duration_ms": 108,
+  "scanned_at": "2026-07-19T19:47:19Z",
+  "duration_ms": 129,
   "is_git_repo": true,
   "git": {
     "root": "/Users/weikejia/CODE/my-agent-group/projects/open/codegraph",
@@ -15,7 +15,7 @@
         "repo": "codegraph"
       }
     ],
-    "head": "33f9ad1",
+    "head": "32e7c02",
     "path_prefix": "",
     "has_commit_hooks": false
   },
@@ -108,7 +108,7 @@
   "backends": [],
   "timeline": {
     "first_commit_at": "2026-05-29T23:06:12-05:00",
-    "last_commit_at": "2026-07-20T02:59:33+08:00",
+    "last_commit_at": "2026-07-20T03:33:42+08:00",
     "shallow_clone": true,
     "last_file_modified_at": "2026-06-10T05:02:08Z",
     "local_arrival_at": "2026-05-30T05:17:30Z",
