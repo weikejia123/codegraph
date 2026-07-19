@@ -1,0 +1,138 @@
+{
+  "schema_version": "3",
+  "scanned_at": "2026-07-19T18:25:04Z",
+  "duration_ms": 108,
+  "is_git_repo": true,
+  "git": {
+    "root": "/Users/weikejia/CODE/my-agent-group/projects/open/codegraph",
+    "branch": "main",
+    "remotes": [
+      {
+        "name": "origin",
+        "url": "https://github.com/colbymchenry/codegraph.git",
+        "host": "github.com",
+        "owner": "colbymchenry",
+        "repo": "codegraph"
+      }
+    ],
+    "head": "16c73e2",
+    "path_prefix": ""
+  },
+  "detected_languages": [
+    {
+      "language": "TypeScript",
+      "files": 196
+    },
+    {
+      "language": "Markdown",
+      "files": 37
+    },
+    {
+      "language": "Shell",
+      "files": 21
+    },
+    {
+      "language": "JavaScript",
+      "files": 18
+    },
+    {
+      "language": "JSON",
+      "files": 8
+    },
+    {
+      "language": "YAML",
+      "files": 2
+    },
+    {
+      "language": "CSS",
+      "files": 1
+    },
+    {
+      "language": "SQL",
+      "files": 1
+    }
+  ],
+  "manifests": [
+    "package.json"
+  ],
+  "key_files": [
+    ".gitignore",
+    "CHANGELOG.md",
+    "CLAUDE.md",
+    "LICENSE",
+    "README.md"
+  ],
+  "key_dirs": [
+    ".github",
+    "assets",
+    "docs",
+    "scripts",
+    "src"
+  ],
+  "manifests_detail": [
+    {
+      "path": "package.json",
+      "kind": "package.json",
+      "name": "@colbymchenry/codegraph",
+      "version": "0.9.9"
+    },
+    {
+      "path": "site/package.json",
+      "kind": "package.json",
+      "name": "site",
+      "version": "0.0.1"
+    }
+  ],
+  "package_managers": [
+    "npm"
+  ],
+  "frontends": [
+    {
+      "kind": "cli",
+      "path": ".",
+      "evidence": [
+        "dependency: commander",
+        "package.json: bin field"
+      ]
+    },
+    {
+      "kind": "web",
+      "path": "site",
+      "evidence": [
+        "config: astro.config.mjs",
+        "dependency: astro"
+      ]
+    }
+  ],
+  "backends": [],
+  "timeline": {
+    "first_commit_at": "2026-05-29T23:06:12-05:00",
+    "last_commit_at": "2026-06-09T12:53:04-04:00",
+    "shallow_clone": true,
+    "last_file_modified_at": "2026-06-10T05:02:08Z",
+    "local_arrival_at": "2026-05-30T05:17:30Z",
+    "local_arrival_source": "git_dir_birthtime",
+    "local_arrival_approximate": true
+  },
+  "totals": {
+    "file_count": 300,
+    "size_bytes": 15035155,
+    "size_mb": 14.34,
+    "scope": "excluding_ignored_dirs"
+  },
+  "ignored_dirs": [
+    ".git",
+    ".next",
+    ".pnpm-store",
+    ".venv",
+    ".wake-project",
+    ".yarn",
+    "__pycache__",
+    "bower_components",
+    "build",
+    "dist",
+    "node_modules",
+    "target",
+    "venv"
+  ]
+}

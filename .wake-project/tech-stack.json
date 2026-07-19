@@ -1,0 +1,146 @@
+{
+  "schema_version": "3",
+  "scanned_at": "2026-07-19T18:25:04Z",
+  "tech_stack": [
+    {
+      "name": "@clack/prompts",
+      "category": "library",
+      "version": "^1.3.0",
+      "dev": false,
+      "source": "package.json"
+    },
+    {
+      "name": "@types/better-sqlite3",
+      "category": "library",
+      "version": "^7.6.0",
+      "dev": true,
+      "source": "package.json"
+    },
+    {
+      "name": "@types/node",
+      "category": "library",
+      "version": "^20.19.30",
+      "dev": true,
+      "source": "package.json"
+    },
+    {
+      "name": "@types/picomatch",
+      "category": "library",
+      "version": "^4.0.2",
+      "dev": true,
+      "source": "package.json"
+    },
+    {
+      "name": "Commander.js",
+      "category": "framework",
+      "version": "^14.0.2",
+      "dev": false,
+      "source": "package.json"
+    },
+    {
+      "name": "TypeScript",
+      "category": "tool",
+      "version": "^5.0.0",
+      "dev": true,
+      "source": "package.json"
+    },
+    {
+      "name": "Vitest",
+      "category": "tool",
+      "version": "^2.1.9",
+      "dev": true,
+      "source": "package.json"
+    },
+    {
+      "name": "fast-string-width",
+      "category": "library",
+      "version": "^3.0.2",
+      "dev": false,
+      "source": "package.json"
+    },
+    {
+      "name": "fast-wrap-ansi",
+      "category": "library",
+      "version": "^0.2.0",
+      "dev": false,
+      "source": "package.json"
+    },
+    {
+      "name": "ignore",
+      "category": "library",
+      "version": "^7.0.5",
+      "dev": false,
+      "source": "package.json"
+    },
+    {
+      "name": "jsonc-parser",
+      "category": "library",
+      "version": "^3.3.1",
+      "dev": false,
+      "source": "package.json"
+    },
+    {
+      "name": "picomatch",
+      "category": "library",
+      "version": "^4.0.3",
+      "dev": false,
+      "source": "package.json"
+    },
+    {
+      "name": "sisteransi",
+      "category": "library",
+      "version": "^1.0.5",
+      "dev": false,
+      "source": "package.json"
+    },
+    {
+      "name": "tree-sitter-wasms",
+      "category": "library",
+      "version": "^0.1.11",
+      "dev": false,
+      "source": "package.json"
+    },
+    {
+      "name": "web-tree-sitter",
+      "category": "library",
+      "version": "^0.25.3",
+      "dev": false,
+      "source": "package.json"
+    },
+    {
+      "name": "@astrojs/starlight",
+      "category": "library",
+      "version": "^0.39.2",
+      "dev": false,
+      "source": "site/package.json"
+    },
+    {
+      "name": "@fontsource-variable/archivo",
+      "category": "library",
+      "version": "^5.2.8",
+      "dev": false,
+      "source": "site/package.json"
+    },
+    {
+      "name": "@fontsource/ibm-plex-mono",
+      "category": "library",
+      "version": "^5.2.7",
+      "dev": false,
+      "source": "site/package.json"
+    },
+    {
+      "name": "Astro",
+      "category": "framework",
+      "version": "^6.3.1",
+      "dev": false,
+      "source": "site/package.json"
+    },
+    {
+      "name": "sharp",
+      "category": "library",
+      "version": "^0.34.5",
+      "dev": false,
+      "source": "site/package.json"
+    }
+  ]
+}
