@@ -1,7 +1,7 @@
 {
-  "schema_version": "5",
-  "scanned_at": "2026-07-20T12:49:06Z",
-  "duration_ms": 200,
+  "schema_version": "6",
+  "scanned_at": "2026-07-20T13:18:50Z",
+  "duration_ms": 168,
   "is_git_repo": true,
   "git": {
     "root": "/Users/weikejia/CODE/my-agent-group/projects/open/codegraph",
@@ -15,12 +15,14 @@
         "repo": "codegraph"
       }
     ],
-    "head": "a040fc5",
+    "head": "82343d1",
     "path_prefix": "",
     "has_commit_hooks": false,
+    "has_upstream": true,
+    "is_detached_head": false,
     "dirty_file_count": 1,
     "has_untracked": false,
-    "ahead_count": 7,
+    "ahead_count": 8,
     "behind_count": 0
   },
   "detected_languages": [
@@ -69,7 +71,7 @@
   ],
   "timeline": {
     "first_commit_at": "2026-05-29T23:06:12-05:00",
-    "last_commit_at": "2026-07-20T12:31:12+08:00",
+    "last_commit_at": "2026-07-20T20:49:06+08:00",
     "shallow_clone": true,
     "last_file_modified_at": "2026-06-10T05:02:08Z",
     "last_core_file_modified_at": "2026-06-10T05:02:08Z",
@@ -98,5 +100,18 @@
     "venv"
   ],
   "manifest_parse_errors": [],
-  "nested_repos": []
+  "nested_repos": [],
+  "warnings": [
+    {
+      "code": "shallow_clone",
+      "severity": "info",
+      "message": "Shallow clone: first_commit_at may be unreliable"
+    }
+  ],
+  "scan_completeness": {
+    "level": "partial",
+    "reasons": [
+      "shallow_clone"
+    ]
+  }
 }
