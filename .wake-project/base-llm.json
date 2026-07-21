@@ -1,0 +1,59 @@
+{
+  "identity": {
+    "type": "cli_tool",
+    "confidence": 0.98,
+    "rationale": "可通过 npm i -g 或安装脚本全局安装，提供 codegraph init/index/search/serve 等 CLI 命令，同时以 MCP server 模式运行",
+    "one_liner": "基于 tree-sitter 和 SQLite 的语义代码知识图谱工具，为 AI 编码代理提供项目级代码智能索引与查询能力",
+    "purpose_summary": "CodeGraph 通过 tree-sitter 将源码解析为包含符号关系、调用图和文件结构的本地知识图谱（SQLite），并暴露完整的 CLI 命令和 MCP server 接口。它帮助 Claude Code、Cursor、Codex 等 AI 编码代理在理解项目架构时大幅减少文件读取和工具调用次数，提供代码探索、影响分析、全模糊搜索等功能。"
+  },
+  "domains": [
+    "静态分析",
+    "代码智能",
+    "开发者工具",
+    "AI辅助开发"
+  ],
+  "tech_summary": {
+    "natural": "TypeScript 编写的 CLI 工具，使用 tree-sitter 进行语言无关的 AST 解析，SQLite（WAL模式）存储知识图谱数据并与 FTS5 全文搜索结合，通过 Commander.js 提供命令行接口，以 MCP server 方式与 AI 编码代理交互",
+    "primary_language": "TypeScript",
+    "runtime": "Node.js >=20.0.0（运行时自包含打包），库调用需 Node 22.5+ 内置 node:sqlite",
+    "framework": null,
+    "key_dependencies": [
+      "web-tree-sitter",
+      "Commander.js",
+      "picomatch",
+      "ignore",
+      "tree-sitter-wasms"
+    ]
+  },
+  "critical_paths": [
+    {
+      "path": "src/index.ts",
+      "role": "核心入口与公共 API，CodeGraph 类的实现，负责初始化、索引、搜索和影响分析等功能导出",
+      "stability": "high"
+    },
+    {
+      "path": "src/bin/codegraph.ts",
+      "role": "CLI 命令行的主入口，分发所有 codegraph 子命令的安装/索引/查询/同步等逻辑",
+      "stability": "high"
+    },
+    {
+      "path": "src/mcp/server.ts",
+      "role": "MCP server 实现，将所有图谱操作暴露为 AI代理可调用的 MCP tools（explore/search/callers/impact 等）",
+      "stability": "high"
+    },
+    {
+      "path": "src/extraction/",
+      "role": "源码解析引擎，使用 tree-sitter 对 20+ 语言进行 AST 提取并构建符号与边表",
+      "stability": "moderate"
+    },
+    {
+      "path": "src/sync/",
+      "role": "文件监听与增量同步机制，通过原生 OS 事件实现代码变更后的自动知识图谱更新",
+      "stability": "moderate"
+    }
+  ],
+  "_meta": {
+    "schema_version": 1,
+    "analyzed_at": "2026-07-21T12:08:42+0800"
+  }
+}

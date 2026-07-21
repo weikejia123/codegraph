@@ -1,13 +1,1 @@
-{"ts":"2026-07-19T18:14:15Z","result":"ok","duration_ms":112,"branch":"main","head":"16c73e2","languages":8,"deps":20,"frontends":2,"backends":0,"files":300,"size_mb":14.34}
-{"ts":"2026-07-19T18:25:04Z","result":"ok","duration_ms":108,"branch":"main","head":"16c73e2","languages":8,"deps":20,"frontends":2,"backends":0,"files":300,"size_mb":14.34}
-{"ts":"2026-07-19T18:30:58Z","result":"ok","duration_ms":112,"branch":"main","head":"e9eef3d","languages":8,"deps":20,"frontends":2,"backends":0,"files":300,"size_mb":14.34}
-{"ts":"2026-07-19T18:38:22Z","result":"ok","duration_ms":110,"branch":"main","head":"e9eef3d","languages":8,"deps":20,"frontends":2,"backends":0,"files":300,"size_mb":14.34}
-{"ts":"2026-07-19T18:47:31Z","result":"ok","duration_ms":115,"branch":"main","head":"e9eef3d","languages":8,"deps":20,"frontends":2,"backends":0,"files":300,"size_mb":14.34}
-{"ts":"2026-07-19T18:59:33Z","result":"ok","duration_ms":116,"branch":"main","head":"ce8f3d5","languages":8,"deps":20,"frontends":2,"backends":0,"files":300,"size_mb":14.34}
-{"ts":"2026-07-19T19:33:42Z","result":"ok","duration_ms":108,"branch":"main","head":"33f9ad1","languages":8,"deps":20,"frontends":2,"backends":0,"files":300,"size_mb":14.34}
-{"ts":"2026-07-19T19:47:19Z","result":"ok","duration_ms":129,"branch":"main","head":"32e7c02","languages":8,"deps":20,"frontends":2,"backends":0,"files":300,"size_mb":14.34}
-{"ts":"2026-07-19T20:00:46Z","result":"ok","duration_ms":124,"branch":"main","head":"450c33d","languages":8,"deps":20,"frontends":2,"backends":0,"files":300,"size_mb":14.34}
-{"ts":"2026-07-20T04:31:12Z","result":"ok","duration_ms":186,"branch":"main","head":"f9089c5","languages":2,"deps":20,"files":300}
-{"ts":"2026-07-20T12:49:06Z","result":"ok","duration_ms":200,"branch":"main","head":"a040fc5","languages":2,"deps":20,"files":300}
-{"ts":"2026-07-20T13:18:50Z","result":"ok","duration_ms":168,"branch":"main","head":"82343d1","languages":2,"deps":20,"files":300,"warning_count":1,"completeness":"partial"}
-{"ts":"2026-07-20T19:49:06Z","result":"ok","duration_ms":180,"branch":"main","head":"472c480","languages":2,"deps":20,"files":300,"warning_count":1,"completeness":"partial"}
+{"ts":"2026-07-21T11:01:51Z","project_id":"019f8456-d41e-7382-b854-ec8103698960","scan_id":"019f8456-d6cd-78b1-a2eb-e9eae8d526e9","result":"ok","duration_ms":256,"branch":"main","head":"a2f7328","languages":2,"deps":20,"files":300,"warning_count":1,"completeness":"partial"}
