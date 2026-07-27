@@ -1,8 +1,8 @@
 {
-  "schema_version": "8",
+  "schema_version": "9",
   "project_id": "019f8456-d41e-7382-b854-ec8103698960",
-  "scan_id": "019f8456-d6cd-78b1-a2eb-e9eae8d526e9",
-  "scanned_at": "2026-07-21T11:01:51Z",
+  "scan_id": "019fa352-d4ca-7600-bf4e-36af44acb73c",
+  "scanned_at": "2026-07-27T11:25:42Z",
   "tech_stack": [
     {
       "name": "@clack/prompts",
