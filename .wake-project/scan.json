@@ -1,9 +1,9 @@
 {
   "schema_version": "9",
   "project_id": "019f8456-d41e-7382-b854-ec8103698960",
-  "scan_id": "019fa352-d4ca-7600-bf4e-36af44acb73c",
-  "scanned_at": "2026-07-27T11:25:42Z",
-  "duration_ms": 163,
+  "scan_id": "019fb0b0-d75b-7753-9804-e8ad90b885b0",
+  "scanned_at": "2026-07-30T01:43:27Z",
+  "duration_ms": 189,
   "is_git_repo": true,
   "git": {
     "root": "/Users/weikejia/CODE/my-agent-group/projects/open/codegraph",
@@ -17,14 +17,14 @@
         "repo": "codegraph"
       }
     ],
-    "head": "a1af985",
+    "head": "ce9f528",
     "path_prefix": "",
     "has_commit_hooks": false,
     "has_upstream": true,
     "is_detached_head": false,
-    "dirty_file_count": 4,
+    "dirty_file_count": 1,
     "has_untracked": false,
-    "ahead_count": 11,
+    "ahead_count": 12,
     "behind_count": 0,
     "latest_tag": "v0.9.9",
     "submodules": []
@@ -75,7 +75,7 @@
   ],
   "timeline": {
     "first_commit_at": "2026-05-29T23:06:12-05:00",
-    "last_commit_at": "2026-07-21T19:01:51+08:00",
+    "last_commit_at": "2026-07-27T19:25:42+08:00",
     "shallow_clone": true,
     "last_file_modified_at": "2026-06-10T05:02:08Z",
     "last_core_file_modified_at": "2026-06-10T05:02:08Z",
