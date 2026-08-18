@@ -19,7 +19,7 @@ export type Location = 'global' | 'local';
  * lookup. New targets add a value here when they're added to the
  * registry. Keep these short and lowercase.
  */
-export type TargetId = 'claude' | 'cursor' | 'codex' | 'opencode' | 'hermes' | 'gemini' | 'antigravity' | 'kiro';
+export type TargetId = 'claude' | 'cursor' | 'codex' | 'opencode' | 'hermes' | 'gemini' | 'antigravity' | 'kiro' | 'copilot-vscode' | 'copilot-cli' | 'copilot-jetbrains';
 
 /**
  * Result of `target.detect(location)`.
@@ -68,6 +68,13 @@ export interface InstallOptions {
    * target has no permissions concept this option is a no-op.
    */
   autoAllow: boolean;
+  /**
+   * Front-load prompt hook (Claude `UserPromptSubmit`) that injects
+   * codegraph_explore context for structural prompts. `true` installs it,
+   * `false` removes any prior install (so opt-out round-trips), `undefined`
+   * leaves it untouched. Targets without a prompt-hook concept ignore it.
+   */
+  promptHook?: boolean;
 }
 
 export interface AgentTarget {

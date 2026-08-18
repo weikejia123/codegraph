@@ -56,13 +56,24 @@ export const csharpExtractor: LanguageExtractor = {
   preParse: blankCsharpPreprocessorDirectives,
   functionTypes: [],
   // Records are first-class type declarations in modern C# (DTOs, value objects,
-  // MediatR/CQRS messages). `record` / `record class` parse as record_declaration
-  // (reference type → class); `record struct` as record_struct_declaration (value
-  // type → struct). Without these, references to a record never resolve (#237).
+  // MediatR/CQRS messages). Without these, references to a record never resolve
+  // (#237). The shipped grammar parses EVERY record form as record_declaration —
+  // `record struct` / `readonly record struct` included (it has no
+  // record_struct_declaration node; that structTypes entry is forward-compat
+  // only) — so classifyClassNode tells the value-type form apart by its
+  // `struct` keyword child. (#831 follow-up)
   classTypes: ['class_declaration', 'record_declaration'],
   methodTypes: ['method_declaration', 'constructor_declaration'],
   interfaceTypes: ['interface_declaration'],
   structTypes: ['struct_declaration', 'record_struct_declaration'],
+  classifyClassNode: (node) => {
+    if (node.type === 'record_declaration') {
+      for (let i = 0; i < node.childCount; i++) {
+        if (node.child(i)?.type === 'struct') return 'struct';
+      }
+    }
+    return 'class';
+  },
   enumTypes: ['enum_declaration'],
   enumMemberTypes: ['enum_member_declaration'],
   typeAliasTypes: [],
@@ -109,6 +120,22 @@ export const csharpExtractor: LanguageExtractor = {
       }
     }
     return false;
+  },
+  // `const` and `static readonly` fields are C# constants (`MaxItems`, lookup
+  // tables, shared config). Drives `constant` kind so value-reference edges
+  // target them; instance `readonly` / plain `static` fields stay `field`s.
+  isConst: (node) => {
+    let hasStatic = false;
+    let hasReadonly = false;
+    for (let i = 0; i < node.childCount; i++) {
+      const child = node.child(i);
+      if (child?.type !== 'modifier') continue;
+      const t = child.text;
+      if (t === 'const') return true;
+      if (t === 'static') hasStatic = true;
+      else if (t === 'readonly') hasReadonly = true;
+    }
+    return hasStatic && hasReadonly;
   },
   isAsync: (node) => {
     for (let i = 0; i < node.childCount; i++) {
